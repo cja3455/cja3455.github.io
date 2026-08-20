@@ -588,3 +588,5 @@ pubeasy.io,110579,RESELLER
 pubmatic.com,168216,RESELLER,5d62403b186f2ace
 pubmatic.com,168244,RESELLER,5d62403b186f2ace
 triplelift.com,14826,RESELLER,6c33edb13117fd86
+taurusx.com,70090,RESELLER
+
