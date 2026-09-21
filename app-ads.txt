@@ -211,6 +211,25 @@ videoheroes.tv, 212499, RESELLER, 064bc410192443d8
 vidoomy.com, 8953515, RESELLER
 zetaglobal.net, 525, RESELLER
 triplelift.com, 14823, RESELLER, 6c33edb13117fd86
+media.net, 8CAXEGFDP, RESELLER
+openx.com, 540393169, RESELLER, 6a698e2ec38604c6
+bold-win.com, 1189, RESELLER, 71746737d0bab951
+loopme.com, 2896, RESELLER, 6c8d5f95897a5a3b
+triplelift.com, 14705-EB, RESELLER
+e-planning.net, 79ded3cfca3d3b78, RESELLER, c1ba615865ed87b2
+xandr.com, 7353, RESELLER
+bigo.sg, adidz3dyfp, RESELLER
+freewheel.tv, 741650, RESELLER
+thunder-monetize.com, 2158729563, RESELLER
+themediagrid.com, JVHG38, RESELLER, 9fac4a4a87c2a44f
+smartclip.net, 15458, RESELLER
+verve.com, 1008379, RESELLER, 0c8f5958fc2d6270
+themediagrid.com, B8N9YH, RESELLER, 35d5010d7789b49d
+sharethrough.com, SniqCOMC, RESELLER, d53b998a7bd4ecd2
+media.net, 8CUUQ286L, RESELLER
+triplelift.com, 12158, RESELLER, 6c33edb13117fd86
+lijit.com, 606973, RESELLER, fafdf38b16bf6b2b
+media.net, 8CU5L226O, RESELLER
 
 
 
@@ -615,3 +634,4 @@ tradplusad.com,cc37417e7e7108a3,RESELLER
 ushareit.com,LCc6b8b1c8aca38e6f,RESELLER
 verve.com,1007302,RESELLER,0c8f5958fc2d6282
 visiblemeasures.com,1090,RESELLER
+risecodes.com,66fab6981efdb80001a3dadc,RESELLER,79929e88b2ba73bc
