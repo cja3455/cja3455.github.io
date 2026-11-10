@@ -2,10 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://aklweb.free.nf">
-  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJA Studio Apps</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-play: #00e676;
+      --accent-huawei: #ff2d55;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      background: linear-gradient(to right, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #334155;
+    }
+
+    .section-title svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+
+    /* Dynamic responsive grid filling available space */
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* 3D Button Style for Apps */
+    .app-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 1.25rem 1rem;
+      text-decoration: none;
+      color: var(--text-main);
+      position: relative;
+      border: 1px solid #334155;
+      
+      /* 3D Depth Setup */
+      transform: translateY(0);
+      box-shadow: 0 6px 0 #0f172a, 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .app-card:hover {
+      background-color: #26334d;
+    }
+
+    .app-card:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #0f172a, 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      background-color: #0f172a;
+    }
+
+    .app-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://aklweb.free.nf">click here</a>.</p>
+
+  <div class="container">
+    <header>
+      <h1>CJA Studio Apps</h1>
+    </header>
+
+    <!-- Google Play Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <!-- Google Play SVG Icon -->
+        <svg viewBox="0 0 512 512" fill="none">
+          <path d="M99.617 8.057a34.338 34.338 0 00-11.41 2.378l232.06 232.06 63.454-63.454L99.617 8.057z" fill="#00E676"/>
+          <path d="M47.165 31.815A34.42 34.42 0 0038.5 56.124v399.752a34.42 34.42 0 008.665 24.309l243.606-243.606L47.165 31.815z" fill="#00D6FF"/>
+          <path d="M99.617 503.943l284.103-170.94-63.454-63.454L88.207 501.608a34.338 34.338 0 0011.41 2.335z" fill="#FF3D00"/>
+          <path d="M465.176 226.757l-65.811-39.6-68.598 68.598 68.598 68.598 65.811-39.6c17.586-10.58 27.824-28.536 27.824-48.998s-10.238-38.418-27.824-48.998z" fill="#FFC107"/>
+        </svg>
+        Play Store Apps
+      </h2>
+      <div class="app-grid">
+        <a href="https://play.google.com/store/apps/details?id=io.squeezapp.messenger" target="_blank" class="app-card">
+          <img src="img/1.png" alt="App 1" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">MobApp</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.phonedriver" target="_blank" class="app-card">
+          <img src="img/2.png" alt="App 2" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Lebanon PhoneDriver</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.arabchatandmeet" target="_blank" class="app-card">
+          <img src="img/3.png" alt="App 3" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Arab Chat and Meet</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.runtracker" target="_blank" class="app-card">
+          <img src="img/4.png" alt="App 4" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Run Tracker</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.goldprice" target="_blank" class="app-card">
+          <img src="img/5.png" alt="App 5" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Realtime Gold Price</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.blackdollar" target="_blank" class="app-card">
+          <img src="img/6.png" alt="App 6" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Lebanon Dollar Rate</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.hiracer" target="_blank" class="app-card">
+          <img src="img/7.png" alt="App 7" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">HiRacer: Highway Racer</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.tilepuzzle" target="_blank" class="app-card">
+          <img src="img/8.png" alt="App 8" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Picture Tile Puzzle</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.weatheraltitude" target="_blank" class="app-card">
+          <img src="img/9.png" alt="App 9" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">Weather Altitude</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=io.cordova.lebrate" target="_blank" class="app-card">
+          <img src="img/10.png" alt="App 10" class="app-icon" onerror="this.src='img/appicon.png'">
+          <span class="app-name">LebRate: Global Currency Rates</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Huawei App Gallery Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <!-- Huawei AppGallery SVG Icon -->
+        <svg viewBox="0 0 1024 1024">
+          <rect width="1024" height="1024" rx="200" fill="#C7000B"/>
+          <path d="M352 288h320v448H352z" fill="none"/>
+          <path d="M512 320c-70.7 0-128 57.3-128 128v192h256V448c0-70.7-57.3-128-128-128zm-64 128c0-35.3 28.7-64 64-64s64 28.7 64 64v32H448v-32z" fill="#FFFFFF"/>
+          <path d="M320 416h384v320H320z" fill="none"/>
+          <path d="M288 416v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V416H288zm384 320H352V480h320v256z" fill="#FFFFFF"/>
+        </svg>
+        Huawei App Gallery Apps
+      </h2>
+      <div class="app-grid">
+        <a href="https://appgallery.cloud.huawei.com/ag/n/app/C117089431?locale=en_GB&source=appshare&subsource=C117089431&shareTo=com.android.bluetooth&shareFrom=appmarket&shareIds=7f8f15d6731e4dbdb7c5f9c11c734cd8_com.android.bluetooth&callType=SHARE" target="_blank" class="app-card">
+          <img src="img/11.png" alt="Huawei App" class="app-icon">
+          <span class="app-name">RetPuz: Retro Puzzle</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
 </body>
 </html>
